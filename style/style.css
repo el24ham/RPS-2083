@@ -1,6 +1,62 @@
 :root {
+  --primary-color: #6810eb;
+  --win-color: #4CAF50;
+  --lose-color: #F44336;
+  --draw-color: #f4ec16;
 }
+
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn {
+  width: 100px;
+  margin: 0 10px;
+  background-color: #c507ac;
+  border: none;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.choice {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc; 
+  cursor: pointer;
+}
+
+.choice input[type="radio"] {
+  margin-top: 5px; 
+  cursor: pointer;
+}
+
+
+#multiplayerChoices div {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#multiplayerResult {
+  font-size: 20px;
+  color: yellow;
+}
+
+#resetButton {
+  background-color: #f44336;
+}
+
+#scores div {
+  font-size: 18px;
+  color: #FFF;
+  margin: 5px 0;
 }
